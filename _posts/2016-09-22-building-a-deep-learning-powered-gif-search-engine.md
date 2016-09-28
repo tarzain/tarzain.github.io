@@ -7,3 +7,5 @@ tags: []
 comments: true
 share: true
 ---
+
+![Main Figure](/images/mainfig.001.png "Main Figure")
