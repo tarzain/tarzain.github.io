@@ -81,5 +81,6 @@ defaults:
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jemoji
 
 exclude:            [vendor]
