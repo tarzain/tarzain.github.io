@@ -6,6 +6,7 @@ date: 2013-09-29
 tags: []
 comments: true
 share: true
+featured_image: '/images/demo/demo-square.jpg'
 ---
 
 Some tech startups that are ridiculously wealthy seem superficial; they reduce tedium and nuisance, not ailment and misfortune. They are solutions to the problems we didn’t even notice we had, not curing pains but scratching itches. They initially sound like bad business ideas. They make you wonder why someone so smart would work on something so trivial. Finding documents online instantly, quickly getting someone’s relationship status, and syncing files between your computers, are now critical to us but were initially mere conveniences. I've come to believe that to succeed extraordinarily with a purely software company in the same fashion, you should prefer thoroughly solving a popular, but minor inconvenience to making any headway on a more major problem.

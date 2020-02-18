@@ -6,6 +6,7 @@ date: 2012-09-27
 tags: []
 comments: true
 share: true
+featured_image: '/images/demo/demo-square.jpg'
 ---
 I’d like to discuss a point of contention between myself and a close friend. He argues that Facebook should be more like MySpace or Tumblr, in that the users are allowed a great deal of customization and creativity with the design of their profile. Well, I disagree; it isn’t that I don’t believe in freedom, that all users are stupid, that users don’t deserve freedom over their accounts. I think it’s more of a freedom through constraint ideal. With too much freedom comes far too much responsibility; not that users aren’t entitled to full responsibility but, honestly, they don’t want it. Users want to be as productive/creative in this medium as they can be with the least amount of effort. Users already have complete freedom in this domain (the internet), they can make blogs, or even their own websites, and connect with whomever and whatever they like. The fact that they already had all these freedoms means they didn’t come to Facebook for more of the same; they joined Facebook to engage with others effortlessly. They don’t want complete freedom over how they design their layout. They want an easier, facilitated online social experience, and that’s what Facebook offers.
 

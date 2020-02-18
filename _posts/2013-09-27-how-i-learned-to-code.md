@@ -6,6 +6,7 @@ date: 2013-09-17
 tags: []
 comments: true
 share: true
+featured_image: '/images/demo/demo-square.jpg'
 ---
 
 I’ve been getting this question a lot recently, in various forms: how’d you learn to code? how should I learn to code? any good programming books you suggest? It’s hard for me to answer these questions because I learned in a rather non-traditional way. I can’t guarantee to any of these eagerly aspiring programmers that my way is the best way to learn, but I do know it worked out very well thus far for me, so I can only hope that by publishing it it will help others.

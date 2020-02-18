@@ -6,6 +6,7 @@ date: 2014-09-14
 tags: []
 comments: true
 share: true
+featured_image: '/images/demo/demo-square.jpg'
 ---
 
 We all want freedom, the ability to do what we want. Happiness, power, and money are all just forms of it. What if I were to tell you there exists a spec for a freedom machine? 

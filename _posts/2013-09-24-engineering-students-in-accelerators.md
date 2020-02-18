@@ -6,6 +6,7 @@ date: 2013-09-24
 tags: []
 comments: true
 share: true
+featured_image: '/images/demo/demo-square.jpg'
 ---
 
 adapted (generalized) from a Facebook conversation about turning UPenn's engineering students into successful entrepreneurs.

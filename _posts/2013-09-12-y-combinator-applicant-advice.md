@@ -6,4 +6,5 @@ tags:
   - link post
 comments: true
 link: 'https://medium.com/@zan2434/y-combinator-applicant-advice-289c58a2ca89'
+featured_image: '/images/demo/demo-square.jpg'
 ---

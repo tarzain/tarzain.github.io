@@ -1,12 +1,9 @@
 ---
-layout: post
-title: "Building a Deep Learning Powered GIF Search Engine"
-description: "When all you have is deep learning, everything looks like a dataset. Deep learning driven GIF search with convolutional and recurrent neural networks, a shallow embedding matrix, and fast-approximate nearest neighbor search."
-date: 2016-09-22
-tags: []
-comments: true
-share: true
-featured_image: '/images/demo/demo-square.jpg'
+title: 'DeepGIF'
+subtitle: 'A deep learning powered GIF search engine.'
+date: 2018-06-30 00:00:00
+description: This page is a demo that shows everything you can do inside portfolio and blog posts.
+featured_image: '/images/mainfig.001.png'
 ---
 
 They say a picture's worth a thousand words, so GIFs are worth at least an order of magnitude more. But what are we to do when the experience of finding the right GIF is like searching for the right ten thousand words in a library full of books, and your only aide is the [Dewey Decimal System](http://giphy.com/categories)?

@@ -1,60 +1,86 @@
 ---
 layout: default
+title: A beautiful two-column Jekyll theme
+description: A beautiful, minimal two-column portfolio theme built for Jekyll. Duet makes your work look simply awesome.
+featured_image: /images/social.jpg
 ---
-{% include header.html %}
 
-<div class="list">
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
-{% else %}
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <div class="list-post">
-    {% if post.link %}
-    <a href="{{ post.link }}">
-    {% else %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-    {% endif %}  
-      <div class="list-post-date">
-        <time>{{ post.date | date_to_string }}</time>
-      </div>
-      <div class="list-post-title">
-        {{ post.title }}
-      </div>
-      {% if post.description %}
-      <div class="list-post-desc">
-        {{ post.description }}
-      </div>
-      {% endif %}
-    </a>
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>I am Zain.</h1>
+		<p>I like to make things. Here are some things I've made.</p>
+
+	</div>
+
+</section>
+
+<section class="portfolio">
 
 
-  </div>
-{% endfor %}
-  <!-- Pagination links -->
-  <div class="list-pagination">
-    <span class="list-pagination-previous">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
-          <i class="fa fa-angle-left" aria-hidden="true"></i>
-          Previous
-        </a>
-      {% else %}
+	<div class="content-wrap portfolio-wrap">
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rrnf2pQ9b/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rqtECpVYA/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rpk5lJj7I/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rufWNJdmo/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rtFQIpLCo/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rtYSFJARX/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rpmu9JMPe/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rbPJaJd7U/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8h67zrpKJV/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8h0SSPJIyE/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8hzrQOJjUO/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+		<div class="portfolio-item">
+			<iframe src="https://www.instagram.com/p/B8rjw8bJW6u/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
 
-      {% endif %}
-    </span>
 
-    <span class="list-pagination-next">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">
-          Next
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </a>
-      {% else %}
+		{% for project in site.projects reversed %}
 
-      {% endif %}
-    </span>
+		<div class="portfolio-item">
 
-  </div>
-{% endif %}
-</div>
+			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
+
+				<div class="portfolio-item__image">
+					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+				</div>
+
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ project.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>

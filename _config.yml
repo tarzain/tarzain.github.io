@@ -1,86 +1,57 @@
-# # # # # # # # # # # # #
-#   K i k o - p l u s   #
-# # # # # # # # # # # # #
+site: Zain Shah
 
-# Basic
-name:               "Zain Shah"
+url: 
+baseurl: 
 
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
 
-
-author:
-  name:             Zain Shah
-  facebook:         zan2434
-  twitter:          zan2434
-  github:           tarzain
-  linkedin:         za1nsh4h
-  medium:           zan2434
-  tumblr:           zan2434
-  email:            xzvf@tarzain.com
-
-# Google-analytics
-google-analytics:
-  id:               "UA-86653906-1"
-
-# Disqus
-disqus:
-  id:               "your-id"
-
-# URL
-url:                "https://tarzain.github.io"
-#url:               "localhost:4000"
-baseurl:            ""
-
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           America/Pacific
-permalink:          /:year-:month-:day/:title/
-
-# Pagination
-paginate:           5
-paginate_path:      /page:num/
-
-# Markdown
-markdown:           kramdown
-kramdown:
-  imput:            GFM
-
-# Navigation
-nav:
-  - name:           "About"
-    url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/tarzain"
-
-
-
-# Sass
-sass:
-  sass_dir:         _sass
-  style:            :compressed
-
-# Scopes
 defaults:
   -
     scope:
-      path:         ""
-      type:         "pages"
+      path: ""
     values:
-      layout:       "page"
+      layout: "default"
   -
     scope:
-      path:         ""
-      type:         "posts"
+      path: ""
+      type: "pages"
     values:
-      layout:       "post"
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
-# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
-gems:
-  - jekyll-seo-tag
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
   - jekyll-paginate
-  - jemoji
+  - jekyll-sitemap
 
-exclude:            [vendor]
+paginate: 6
+paginate_path: "/blog/page:num/"
+  

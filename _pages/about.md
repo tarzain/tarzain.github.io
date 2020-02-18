@@ -1,7 +1,11 @@
 ---
 title: About
+subtitle: exploring
 permalink: /about/
+featured_image: /images/demo/demo-landscape.jpg
 ---
+
+![](/images/demo/demo-landscape.jpg)
 
 I'm exploring.
 
@@ -9,10 +13,4 @@ Previously, I developed models for automated valuations and other high stakes al
 
 I most recently built a [GIF search engine](http://deepgif.tarzain.com) using deep multimodal embeddings.
 
-This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme, powered by [Jekyll](http://jekyllrb.com), hosted on [Github Pages](https://pages.github.com).
-
 This blog is a compressed version of me. If you want to get in touch with the real me, feel free to email me at xzvf AT tarzain DOT com
-
-## License
-
-This theme is released under MIT License.
