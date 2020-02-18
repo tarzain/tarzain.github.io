@@ -1,10 +1,49 @@
 ---
 layout: default
-title: A beautiful two-column Jekyll theme
-description: A beautiful, minimal two-column portfolio theme built for Jekyll. Duet makes your work look simply awesome.
+title: Zain Shah
+description: 
 featured_image: /images/social.jpg
 ---
+<script type="text/javascript">
+	loadInstagram = function(){
+		list = ['B8rrnf2pQ9b',
+				'B8rqtECpVYA',
+				'B8rpk5lJj7I',
+				'B8rufWNJdmo',
+				'B8rtFQIpLCo',
+				'B8rtYSFJARX',
+				'B8rpmu9JMPe',
+				'B8rbPJaJd7U',
+				'B8h67zrpKJV',
+				'B8h0SSPJIyE',
+				'B8hzrQOJjUO',
+				'B8rjw8bJW6u']
+		for (var itemIndex = 0; itemIndex < list.length; itemIndex++) {
+			var item = list[itemIndex];
+			let WHRatio = 0.9375
+			let width = Math.floor(window.innerWidth * 0.445)
+			let height = Math.floor(width * WHRatio)
 
+			elem = `<div class="portfolio-item">\
+						<iframe class='ig-embed' src="https://www.instagram.com/p/${item}/embed" width="${width}" height="${height}" frameborder="0" scrolling="no" allowtransparency="true"></iframe>\
+					</div>`
+			portfolioList = document.getElementById('portfolio-list');
+			portfolioList.insertAdjacentHTML('beforeend', elem);
+		}
+	};
+
+	resizeEmbedsOnResize = function () {
+		var elems = document.getElementsByClassName('ig-embed');
+		for (var i = 0; i < elems.length; i++) {
+			var elem = elems[i];
+			let WHRatio = 0.9375
+			let width = Math.floor(window.innerWidth * 0.445)
+			let height = Math.floor(width * WHRatio)
+			elem.width = width;
+			elem.height = height;
+		}
+	};
+</script>
 <section class="intro">
 
 	<div class="wrap">
@@ -17,10 +56,11 @@ featured_image: /images/social.jpg
 </section>
 
 <section class="portfolio">
-
-
-	<div class="content-wrap portfolio-wrap">
-		<div class="portfolio-item">
+	<div class="content-wrap portfolio-wrap" id="portfolio-list">
+		<script type="text/javascript">
+			loadInstagram();
+		</script>
+		<!-- <div class="portfolio-item">
 			<iframe src="https://www.instagram.com/p/B8rrnf2pQ9b/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 		</div>
 		<div class="portfolio-item">
@@ -55,7 +95,7 @@ featured_image: /images/social.jpg
 		</div>
 		<div class="portfolio-item">
 			<iframe src="https://www.instagram.com/p/B8rjw8bJW6u/embed" width="750" height="800" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-		</div>
+		</div> -->
 
 
 		{% for project in site.projects reversed %}
@@ -80,7 +120,10 @@ featured_image: /images/social.jpg
 		</div>
 
 		{% endfor %}
-
+		<script type="text/javascript">
+			// window.addEventListener('load', loadInstagram);
+			window.addEventListener('resize', resizeEmbedsOnResize);
+		</script>
 	</div>
 
 </section>
